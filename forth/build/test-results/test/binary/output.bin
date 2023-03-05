@@ -1,0 +1,6 @@
+[1, 2, over, over, over]
+[1, 2, swap, 3, swap, 4, swap]
+[1, dup, dup, dup]
+[1, dup, dup, dup]
+[1, 2, 3, 4, drop, drop, drop]
+[1, dup, dup, dup]
