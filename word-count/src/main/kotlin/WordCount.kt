@@ -15,15 +15,11 @@ object WordCount {
                 it.lowercase()
             }
         }
-        val map = mutableMapOf<String, Int>()
-        for(x in inputPhrase) {
-            if(map.contains(x)) {
-                map[x] = map[x]!!.plus(1)
-            } else {
-                map[x] = 1
-            }
+
+        val m = inputPhrase.groupBy { it }.run {
+            this.mapValues { e -> e.value.size }
         }
 
-        return map
+        return m
     }
 }
